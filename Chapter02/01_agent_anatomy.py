@@ -41,3 +41,4 @@ if __name__ == "__main__":
         agent.step(env)
 
     print("Total reward got: %.4f" % agent.total_reward)
+    print("Total reward got: {}".format(agent.total_reward))
