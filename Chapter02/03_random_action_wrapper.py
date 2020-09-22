@@ -6,7 +6,7 @@ Action = TypeVar('Action')
 
 
 class RandomActionWrapper(gym.ActionWrapper):
-    def __init__(self, env, epsilon=0.1):
+    def __init__(self, env, epsilon: int = 0.1):
         super(RandomActionWrapper, self).__init__(env)
         self.epsilon = epsilon
 
@@ -29,4 +29,5 @@ if __name__ == "__main__":
         if done:
             break
 
-    print("Reward got: %.2f" % total_reward)
+    # print("Reward got: %.2f" % total_reward)
+    print("Reward got:{}".format(total_reward))
